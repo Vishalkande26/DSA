@@ -1,0 +1,17 @@
+class Main{
+    public static void main(String args[]){
+        String s1 = "I am a java developer";
+        
+        String s2[] = s1.split(" ");
+        
+        String longest = s2[0];
+        
+        for(int i = 1; i < s2.length; i++){
+            if(s2[i].length() > longest.length()){
+                longest = s2[i];
+            }
+        }
+        System.out.println("Longest word :" + longest);
+        System.out.println("Length :" + longest.length());
+    }
+}
